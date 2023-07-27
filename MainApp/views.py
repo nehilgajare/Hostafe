@@ -11,8 +11,7 @@ def home(request):
 def Base(request):
     return render(request,'MainApp/base.html')    
 
-def Team(request):
-    return render(request,'MainApp/team.html')        
+     
 
  
 
