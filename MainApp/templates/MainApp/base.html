@@ -42,7 +42,7 @@
       <ul>
         <li><a href="{%  url 'home'  %}"><i class="fas fa-home"></i>Home</a></li>
         <li><a href="#toaboutus"><i class="fas fa-info-circle"></i>About Us</a></li>
-        <li><a href="{% url 'team' %}"><i class="fas fa-users"></i>Our Team</a></li>
+        
         {% if request.user.is_authenticated %}
         <li><a href="{% url 'logout' %}"><i class="fas fa-user-friends"></i>LogOut </a>
         </li>
@@ -139,7 +139,7 @@
         <ul>
           <li><a href="{%  url 'home'  %}"><i class="fas fa-home"></i>Home</a></li>
           <li><a href="#toaboutus"><i class="fas fa-info-circle"></i>About Us</a></li>
-          <!-- <li><a href="{% url 'team' %}"><i class="fas fa-users"></i>Our Team</a></li> -->
+          
           {% if request.user.is_authenticated %}
           <li><a href="{% url 'logout' %}"><i class="fas fa-user-friends"></i>LogOut </a>
           </li>
