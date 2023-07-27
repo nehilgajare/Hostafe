@@ -42,11 +42,14 @@ class HostelInfo(models.Model):
     contact_number = models.CharField(max_length=10,null=True,default=" ")
     map_link = models.CharField(max_length=200,null=True,default=" ")
     mess = models.CharField(max_length=50,null=True,default=" ")
+    hostel_image_url_1=models.URLField(max_length=200,null=True,default=" ",blank=True)
+    hostel_image_url_2=models.URLField(max_length=200,null=True,default=" ",blank=True)
+    hostel_image_url_3=models.URLField(max_length=200,null=True,default=" ",blank=True)
     hostel_img_1=models.ImageField(upload_to='images/',default=" " ,null=True,blank=True)
     hostel_img_2=models.ImageField(upload_to='images/',default=" " ,null=True,blank=True)
     hostel_img_3=models.ImageField(upload_to='images/',default=" " ,null=True,blank=True)
     def __str__(self):
-        return f'{self.hostel_name}' 
+        return f'{self.hostel_name}'
     def save(self,*args,**kwargs):
         super().save(*args,**kwargs)     
 

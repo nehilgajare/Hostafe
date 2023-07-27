@@ -1,5 +1,6 @@
 from django.db.models.query_utils import Q
 from django.shortcuts import render
+from django.db.models.query_utils import Q
 from .models import HostelInfo
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -13,7 +14,7 @@ def Base(request):
 def Team(request):
     return render(request,'MainApp/team.html')        
 
-
+ 
 
 # @login_required(login_url='login')
 def Result(request):
